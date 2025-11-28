@@ -283,8 +283,9 @@ function createBrowser() {
     document.getElementById('view-list').addEventListener('click', () => switchView('list'));
     document.getElementById('sort-select').addEventListener('change', (e) => sortFiles(e.target.value));
     
-    // ESC键关闭浏览器窗口
+    // ESC键关闭浏览器窗口 - 修复：只处理ESC键，且只在浏览器打开时处理
     const browserKeyHandler = (e) => {
+        // 只处理ESC键，避免干扰其他键盘操作（如Ctrl+V粘贴）
         if (e.key === 'Escape') {
             const browser = document.getElementById('catsee-browser');
             const previewOverlay = document.getElementById('file-preview-overlay');
@@ -294,11 +295,14 @@ function createBrowser() {
                 return; // 预览弹窗有自己的ESC处理
             }
             
-            // 否则关闭浏览器窗口
+            // 只有在浏览器窗口打开时才处理ESC键
             if (browser && browser.style.display !== 'none') {
                 browser.style.display = 'none';
+                e.preventDefault(); // 阻止默认行为
+                e.stopPropagation(); // 阻止事件冒泡
             }
         }
+        // 移除了对其他键的处理，避免干扰ComfyUI的键盘快捷键
     };
     document.addEventListener('keydown', browserKeyHandler);
     
