@@ -2,9 +2,6 @@
 
 ComfyUI的可爱文件浏览器，支持元数据查看和工作流导入。
 
-<img width="1871" height="860" alt="1321312" src="https://github.com/user-attachments/assets/379c3267-37e8-4ced-a8a6-d7b256995d9d" />
-<img width="1765" height="879" alt="3123123123" src="https://github.com/user-attachments/assets/b6d172f5-f9c2-43c1-b0ad-b9d5b1d78c59" />
-
 ## ✨ 功能特性
 
 ### 📁 文件浏览
