@@ -4,6 +4,7 @@ ComfyUI的可爱文件浏览器，支持元数据查看和工作流导入。
 
 <img width="1792" height="886" alt="ScreenShot_2025-11-29_081424_769" src="https://github.com/user-attachments/assets/bd98c807-7c10-4e1a-a5e1-2bd5a1c33fbe" />
 <img width="1715" height="857" alt="ScreenShot_2025-11-29_081347_625" src="https://github.com/user-attachments/assets/f40fd4f0-bf9e-4c27-8544-da6fc8afbd7b" />
+<img width="1708" height="834" alt="ScreenShot_2025-12-03_125302_850" src="https://github.com/user-attachments/assets/3c985a29-884b-42f7-83fa-4c1f9ba77529" />
 
 ## ✨ 功能特性
 
